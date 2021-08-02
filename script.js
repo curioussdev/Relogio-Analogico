@@ -15,11 +15,15 @@ function updateClock() {
 };
 
 function fixZero(time) {
-    if (time < 10) {
+ /*   if (time < 10) {
         return '0'+time;
     } else {
         return time;
     }
+ */
+    // REFATORANDO O if
+    return time < 10 ? `0${time}` : time;
+
 };
 
 
