@@ -16,9 +16,9 @@ function updateClock() {
 
 function fixZero(time) {
     if (time < 10) {
-        return '0' + time;
+        return '0'+time;
     } else {
-        time;
+        return time;
     }
 };
 
