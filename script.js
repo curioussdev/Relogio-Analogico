@@ -37,3 +37,4 @@ function fixZero(time) {
 
 // de 1 em 1 segundo ele executará a função
 setInterval(updateClock, 1000);
+updateClock();
