@@ -11,7 +11,15 @@ function updateClock() {
     let minute = now.getMinutes();
     let second = now.getSeconds();
 
-    digitalElement.innerHTML = `${hour}:${minute}:${second}`;
+    digitalElement.innerHTML = `${fixZero(hour)}:${fixZero(minute)}:${fixZero(second)}`;
+};
+
+function fixZero(time) {
+    if (time < 10) {
+        return '0' + time;
+    } else {
+        time;
+    }
 };
 
 
